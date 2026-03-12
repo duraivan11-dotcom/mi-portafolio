@@ -1,0 +1,48 @@
+#titulo{
+ color:rgb(29, 29, 31);
+ text-align: center;
+ 
+}
+.datos{
+    text-align: center;
+    background-color: gray;
+    color: white;
+
+
+}
+.estilo {
+    margin-top: 110px;
+   margin-left: 200;
+   background-color: rgb(134, 158, 158);
+}
+*{
+    margin: 0px;
+}
+
+table{
+    width:80% ;
+    margin-left: 220px;
+}
+
+
+img{
+    width: 200px;
+   
+}
+
+.container-img{
+    text-align: center;
+
+}
+.desarrollo{
+    margin: 10px 300px 10px 300px;
+    background-color: rgb(134, 158, 158);
+}
+#color {
+    background-color: rgb(221, 219, 219);
+    text-align: center;
+}
+ul {
+    display: inline-block;
+    text-align: left;
+}

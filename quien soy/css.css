@@ -1,0 +1,133 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI;
+}
+
+body{
+background:#e5e5e5;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#474747;
+}
+
+.logo{
+color:white;
+font-size:18px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+margin-left:30px;
+font-size:16px;
+}
+
+/* HERO */
+
+.hero{
+background:#f5f5f5;
+padding:60px;
+text-align:center;
+}
+
+.hero h1{
+color:#f87205;
+margin-bottom:10px;
+}
+
+.btn-main{
+background:#d4ba43;
+color:white;
+border:none;
+padding:10px 25px;
+border-radius:5px;
+margin-top:10px;
+}
+
+/* FRASE */
+
+.about-highlight{
+background:#a14419;
+color:white;
+text-align:center;
+padding:50px;
+}
+
+.profile-pic img{
+border-radius:50%;
+border:5px solid white;
+width:150px;
+height:150px;
+margin-bottom:20px;
+}
+
+blockquote{
+font-size:20px;
+}
+
+/* PROYECTOS */
+
+.projects{
+padding:60px;
+text-align:center;
+}
+
+.projects h2{
+margin-bottom:40px;
+}
+
+.projects-grid{
+text-align:center;
+}
+
+.card{
+background:white;
+border:1px solid #ddd;
+padding:15px;
+border-radius:8px;
+width:22%;
+margin:1%;
+display:inline-block;
+}
+
+.card img{
+width:100%;
+border-radius:5px;
+}
+
+.card h3{
+margin:10px 0;
+}
+
+.btn-card{
+background:#7a75aa;
+color:white;
+border:none;
+padding:8px 15px;
+margin-top:10px;
+border-radius:3px;
+}
+
+/* FOOTER */
+
+.footer{
+background:#333;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+
+.parr{
+margin-bottom: 30px;
+}

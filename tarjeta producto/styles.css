@@ -1,0 +1,93 @@
+body {
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.container-img img {
+    width: 360px;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.descripcion {
+    margin: 25px 0 10px;
+    font-size: 1.4em;
+    color: #5c4033;
+}
+
+.detallada {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 360px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.detallada li {
+    margin-bottom: 12px;
+    font-size: 1.05em;
+}
+
+.product-price {
+    margin: 30px 0;
+}
+
+.precio {
+    font-size: 2.1em;
+    font-weight: bold;
+    color: #b22222;
+    margin-bottom: 10px;
+}
+
+.rating-descuento {
+    font-size: 1.3em;
+    margin: 15px 0;
+}
+
+.rating {
+    color: #ffa41c;
+    font-size: 1.4em;
+}
+
+.descuento {
+    color: #2e8b57;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+
+.datos {
+    display: inline-block;
+    width: 220px;
+    padding: 16px 0;
+    background-color: rgb(19, 19, 19);
+    color: rgb(211, 20, 20);
+    font-size: 1.6em;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+  
+}
+
+.datos:hover {
+    background-color: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+   
+
+
