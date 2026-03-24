@@ -3,8 +3,8 @@
     --secondary: #10B981;
     --accent: #F59E0B;
     --dark: #1F2937;
-    --light: #F9FAFB;
-    --white: #ffffff;
+    --light: #dadbdd;
+    --white: #dadbdd;
     --gray: #6B7280;
 }
 
@@ -57,7 +57,7 @@ body {
     background: var(--white);
     padding: 50px 0;
     text-align: center;
-    border-bottom: 1px solid #E5E7EB;
+    border-bottom: 1px solid #93959b;
 }
 
 .hero h2 {
