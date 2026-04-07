@@ -1,18 +1,19 @@
+/* --- RESETEO Y ESTILOS GLOBALES --- */
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0;      /* Elimina el margen por defecto del navegador */
+    padding: 0;     /* Elimina el relleno por defecto del navegador */
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: white;
-    color: #333;
+    font-family: Arial, Helvetica, sans-serif; /* Define la fuente principal */
+    background: white;                         /* Fondo de la página blanco */
+    color: #333;                               /* Texto gris oscuro para lectura suave */
 }
 
-
+/* --- ENCABEZADO (Header) --- */
 .tabla1 {
-    background: #3a3a3a;
-    width: 100%;
+    background: #3a3a3a; /* Fondo gris oscuro para la barra superior */
+    width: 100%;         /* Ocupa todo el ancho de la pantalla */
 }
 
 .tabla1 table {
@@ -20,101 +21,101 @@ body {
 }
 
 .tabla1 td {
-    padding: 16px 32px;
+    padding: 16px 32px;  /* Espaciado interno para que el contenido no toque los bordes */
 }
 
 .caja1 {
-    text-align: left;
+    text-align: left;    /* Alinea el logo o nombre a la izquierda */
 }
 
 .texto1, .texto2 {
-    color: white;
-    font-size: 1.2rem;
+    color: white;        /* Texto en blanco para resaltar sobre el fondo oscuro */
+    font-size: 1.2rem;   /* Tamaño de letra mediano */
 }
 
 .texto1 {
-    font-weight: 900;
+    font-weight: 900;    /* Texto muy negrita (posible nombre de marca) */
 }
 
 .texto2 {
-    font-weight: 400;
+    font-weight: 400;    /* Texto de peso normal */
 }
 
 .caja2 {
-    text-align: right;
+    text-align: right;   /* Alinea los enlaces de navegación a la derecha */
 }
 
 .caja2 a {
-    color: #ccc;
-    text-decoration: none;
-    margin-left: 28px;
+    color: #ccc;            /* Enlaces en color gris claro */
+    text-decoration: none;  /* Quita el subrayado de los links */
+    margin-left: 28px;      /* Separa los enlaces entre sí */
 }
 
-
+/* --- SECCIÓN PRINCIPAL (Hero / Quiénes Somos) --- */
 .tabla2 {
-    padding: 60px 0;
+    padding: 60px 0;    /* Espacio arriba y abajo de la sección */
 }
 
 .tabla2 table {
-    width: 90%;
-    margin: auto;
+    width: 90%;         /* La tabla no ocupa todo el ancho, dejando márgenes laterales */
+    margin: auto;       /* Centra la tabla horizontalmente */
 }
 
 .caja3 {
-    width: 50%;
+    width: 50%;         /* Columna de la izquierda (normalmente para imagen) */
     text-align: center;
 }
 
 .caja3 img {
-    max-width: 100%;
+    max-width: 100%;    /* Asegura que la imagen no se salga de su contenedor */
 }
 
 .caja4 {
-    width: 50%;
-    padding-left: 40px;
+    width: 50%;         /* Columna de la derecha (para texto) */
+    padding-left: 40px; /* Separa el texto de la imagen de la izquierda */
 }
 
 #qs {
-    font-size: 70px;
-    color: #FB3F1D;
+    font-size: 70px;    /* Título gigante */
+    color: #FB3F1D;     /* Color naranja rojizo vibrante */
     margin-bottom: 20px;
 }
 
 .caja4 p {
-    margin-bottom: 30px;
+    margin-bottom: 30px; /* Separa los párrafos del botón inferior */
 }
 
+/* --- BOTONES --- */
 .boton1 {
-    background: #FB3F1D;
-    color: white;
-    padding: 14px 30px;
-    border-radius: 5px;
-    border: 2px solid black;
+    background: #FB3F1D;    /* Fondo naranja */
+    color: white;           /* Texto blanco */
+    padding: 14px 30px;     /* Tamaño del botón */
+    border-radius: 5px;     /* Esquinas ligeramente redondeadas */
+    border: 2px solid black;/* Borde negro sólido */
 }
-
 
 .boton2 {
     background: #FB3F1D;
     color: #e0e0e0;
     border-radius: 5px;
     border: 2px solid black;
-    margin:20px auto;
+    margin: 20px auto;      /* Centrado con margen arriba/abajo */
     padding: 5px;
-    width: 100px;
-
+    width: 100px;           /* Botón más pequeño y estrecho */
 }
 
+/* --- SECCIÓN DE TESTIMONIO O PERFIL --- */
 .tabla3 {
-    background: #FB3F1D;
+    background: #FB3F1D;    /* Fondo naranja llamativo */
     padding: 60px 20px;
-    text-align: center;
+    text-align: center;     /* Centra todo el contenido */
 }
 
 .caja5 img {
     width: 220px;
     height: 220px;
-    border-radius: 50%;
-    border: 6px solid white;
+    border-radius: 50%;     /* Hace la foto completamente circular */
+    border: 6px solid white;/* Borde grueso blanco alrededor de la foto */
     display: block;
     margin: auto;
 }
@@ -123,15 +124,16 @@ body {
     color: white;
     font-size: 1.4rem;
     padding: 20px 40px;
-    width: 50%;
+    width: 50%;             /* Limita el ancho del texto para que sea legible */
     margin: auto;
 }
 
 .texto4 {
     color: white;
-    font-style: italic;
+    font-style: italic;     /* Texto en cursiva (estilo autor de cita) */
 }
 
+/* --- SECCIÓN DE PROYECTOS / PORTAFOLIO --- */
 .tabla4 {
     padding: 60px 20px;
     max-width: 1200px;
@@ -147,28 +149,28 @@ body {
 
 .projects-table {
     width: 100%;
-    border-spacing: 25px 30px;
-    table-layout: fixed;
+    border-spacing: 25px 30px; /* Separa las celdas de la tabla (las tarjetas) */
+    table-layout: fixed;       /* Fuerza a que las columnas midan lo mismo */
 }
 
 .project-cell {
-    width: 25%;
-    vertical-align: top;
+    width: 25%;                /* Diseño de 4 columnas (100 / 4) */
+    vertical-align: top;       /* Alinea las tarjetas al borde superior */
     padding: 0;
 }
 
 .project-card {
     background: white;
-    border: 1px solid #e0e0e0;
-    border-radius: 12px;
+    border: 1px solid #e0e0e0; /* Borde gris muy fino */
+    border-radius: 12px;       /* Bordes muy redondeados para estilo moderno */
     height: 100%;
-    overflow: hidden;
+    overflow: hidden;          /* Corta la imagen si sobresale de los bordes redondeados */
 }
 
 .project-card img {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    object-fit: cover;         /* Ajusta la imagen sin deformarla */
     vertical-align: top;
 }
 
@@ -185,10 +187,10 @@ body {
 
 .project-info p {
     font-size: 1rem;
-    color: #666;
-    line-height: 1.5;
+    color: #666;               /* Gris intermedio para descripción */
+    line-height: 1.5;          /* Altura de línea para mejorar legibilidad */
     margin: 0 0 20px;
-    min-height: 350px;
+    min-height: 350px;         /* Empuja el botón hacia abajo para que todas las tarjetas midan igual */
 }
 
 .btn-project {
@@ -201,12 +203,14 @@ body {
 }
 
 .btn-project:hover {
-    background: #d32f0f;
+    background: #d32f0f;      /* El color cambia a un rojo más oscuro al pasar el ratón */
 }
+
+/* --- PIE DE PÁGINA (Footer) --- */
 .pie {
-    background: #2f3742;
+    background: #2f3742;      /* Color azul-grisáceo oscuro */
     color: white;
     padding: 15px;
-    text-align: right;
+    text-align: right;        /* Alinea el copyright a la derecha */
     font-size: 14px;
 }
