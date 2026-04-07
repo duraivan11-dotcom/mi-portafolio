@@ -1,94 +1,154 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="css.css" />
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="logo">Helver Duran</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quien soy</title>
+    <link rel="stylesheet" href="./css.css">
+</head>
 
-      <nav class="menu">
-        <a href="#">Inicio</a>
-        <a href="#">¿Quién soy?</a>
-        <a href="#">Proyectos</a>
-      </nav>
-    </header>
+<body>
 
-    <section class="hero">
-      <table align="center">
-        <tr>
-          <td>
-            <img src="./imagen4.jpeg" width="400" />
-          </td>
+    <div class="tabla1">
+        <table>
+            <tr>
 
-          <td>
-            <h1>¿Quién soy?</h1>
-            <p>
-              Soy una persona responsable, creativa y con gran interés por
+                <td class="caja1">
+                    <span class="texto1">Helver</span>
+                    <span class="texto2">Duran</span>
+                </td>
+
+                <td class="caja2">
+                    <a href="#" id="link1">Inicio</a>
+                    <a href="#">¿Quien soy?</a>
+                    <a href="#">Proyectos</a>
+                </td>
+
+            </tr>
+        </table>
+    </div>
+
+
+    <div class="tabla2">
+        <table>
+            <tr>
+
+                <td class="caja3">
+                    <img src="./imagen4.jpeg" alt="">
+                </td>
+
+                <td class="caja4">
+                    <h2 id="qs">¿Quien soy?</h2>
+
+                    <p>
+                         Soy una persona responsable, creativa y con gran interés por
               aprender nuevas habilidades. Me gusta trabajar en equipo,
               enfrentar retos y buscar siempre la mejor manera de resolver
               problemas. Actualmente estoy enfocado en el desarrollo de mis
               conocimientos en tecnología y programación, especialmente en el
               diseño y desarrollo web.
             </p>
-            <button class="btn-main">Leer más</button>
-          </td>
-        </tr>
-      </table>
-    </section>
 
-    <section class="about-highlight">
-      <div class="profile-pic">
-        <img src="./imagen3.jpg" />
-      </div>
+                    </p>
 
-      <blockquote class="parr">
-        💻 "La programación no se trata solo de escribir código. Se trata de
+                    <a href="#" class="boton1">Leer más</a>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div class="tabla3">
+        <table>
+
+            <tr>
+                <td class="caja5">
+                    <img src="./imagen3.jpg" alt="">
+                </td>
+            </tr>
+
+            <tr>
+                <td class="texto3">
+                        💻 "La programación no se trata solo de escribir código. Se trata de
         resolver problemas, pensar de forma lógica y crear soluciones que puedan
         ayudar a otras personas. Cada línea de código es una oportunidad para
         aprender algo nuevo y mejorar como desarrollador."
-      </blockquote>
-      <span>- Helver Duran</span>
-    </section>
+            </tr>
 
-    <section class="projects">
-      <h2>Mis proyectos</h2>
+            <tr>
+                <td class="texto4">
+                    Helver Duran.
+                </td>
+            </tr>
 
-      <div class="projects-grid">
-        <div class="card">
-          <img src="https://picsum.photos/250/150" />
-          <h3>Proyecto 1</h3>
-          <p>Descripción breve del proyecto.</p>
-          <button class="btn-card">Ver proyecto</button>
-        </div>
+        </table>
+    </div>
+    <div class="tabla4">
+        <h2>Mis proyectos</h2>
 
-        <div class="card">
-          <img src="https://picsum.photos/250/150" />
-          <h3>Proyecto 2</h3>
-          <p>Descripción breve del proyecto.</p>
-          <button class="btn-card">Ver proyecto</button>
-        </div>
+        <table class="projects-table">
+            <tr>
+                <td class="project-cell">
+                    <div class="project-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF-2hqGWXw3BlWw-u0ee1WVUUTgdIuMIDCiw&s"
+                            alt="Calculadora">
+                        <div class="project-info">
+                            <h3>Proyecto 1</h3>
+                            <p>Desarrollé una aplicación web que permite crear facturas de manera rápida y organizada. El sistema calcula automáticamente subtotal,
+                               impuestos, descuentos y total, mejorando la gestión de ventas.
+                               Se utilizó HTML, CSS y JavaScript para lograr un diseño claro y funcional.</p>
+                            <a href="#" class="btn-project">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </td>
 
-        <div class="card">
-          <img src="https://picsum.photos/250/150" />
-          <h3>Proyecto 3</h3>
-          <p>Descripción breve del proyecto.</p>
-          <button class="btn-card">Ver proyecto</button>
-        </div>
+                <td class="project-cell">
+                    <div class="project-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvMPSg4Y7mtffgQNDqKgnMAxFcrb_3ULR8gQ&s"
+                            alt="To-Do List">
+                        <div class="project-info">
+                            <h3>Proyecto 2</h3>
+                            <p>Diseñé una base de datos en MongoDB para administrar pedidos, clientes y productos de un restaurante.
+                               La estructura permite guardar información organizada y realizar consultas eficientes. Incluye colecciones relacionadas y uso de datos tipo array.</p>
+                            <a href="#" class="btn-project">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </td>
 
-        <div class="card">
-          <img src="https://picsum.photos/250/150" />
-          <h3>Proyecto 4</h3>
-          <p>Descripción breve del proyecto.</p>
-          <button class="btn-card">Ver proyecto</button>
-        </div>
-      </div>
-    </section>
+                <td class="project-cell">
+                    <div class="project-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc7M7WWP1FgzCv74v0pF2fLfmlJLDWUKBTEg&s"
+                            alt="Reloj">
+                        <div class="project-info">
+                            <h3>Proyecto 3</h3>
+                            <p>Creé un sitio web de portafolio para mostrar proyectos, habilidades y datos personales.
+                               El diseño es moderno, adaptable a dispositivos móviles y organizado mediante Flexbox. El objetivo es presentar información de forma profesional.</p>
+                            <a href="#" class="btn-project">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </td>
 
-    <footer class="footer">© 2026 Todos los derechos reservados.</footer>
-  </body>
+                <td class="project-cell">
+                    <div class="project-card">
+                        <img src="https://www.channelpartner.es/wp-content/uploads/2025/06/AdobeStock_573838027-scaled-1.jpeg"
+                            alt="Frases">
+                        <div class="project-info">
+                            <h3>Proyecto 4</h3>
+                            <p>Elaboré el modelo entidad-relación y tablas SQL para gestionar clientes, trabajadores e inmuebles.
+                             El sistema permite registrar propiedades en alquiler o venta y relacionarlas con los usuarios. Facilita la administración de información de manera estructurada.</p>
+                            <a href="#" class="btn-project">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <footer class="pie">
+
+        <p>Copyright © 2018. Todos los derechos reservados.</p>
+
+    </footer>
+
 </html>
