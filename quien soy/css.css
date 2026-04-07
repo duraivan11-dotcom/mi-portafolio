@@ -116,7 +116,6 @@ body {
     height: 220px;
     border-radius: 50%;     /* Hace la foto completamente circular */
     border: 6px solid white;/* Borde grueso blanco alrededor de la foto */
-    display: block;
     margin: auto;
 }
 
