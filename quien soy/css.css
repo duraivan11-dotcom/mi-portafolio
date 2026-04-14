@@ -11,37 +11,47 @@ body {
 }
 
 /* --- ENCABEZADO (Header) --- */
-.tabla1 {
-    background: #3a3a3a; /* Fondo gris oscuro para la barra superior */
-    width: 100%;         /* Ocupa todo el ancho de la pantalla */
-}
-
-.tabla1 table {
+.encabezado {
+    background: #3a3a3a;
     width: 100%;
+    padding: 16px 32px;
+    overflow: hidden; /* Evita que floats dañen el contenedor */
 }
 
-.tabla1 td {
-    padding: 16px 32px;  /* Espaciado interno para que el contenido no toque los bordes */
-}
-
+/* Caja izquierda del header */
 .caja1 {
-    text-align: left;    /* Alinea el logo o nombre a la izquierda */
+    float: left;
+    text-align: left;
+    padding: 0 100px 0 0;
+    line-height: 25px; /* alinear mejor el texto */
 }
 
+/* Primer texto del header */
 .texto1 {
-    color: white;        /* Texto en blanco para resaltar sobre el fondo oscuro */
-  padding-left: 90px;
+    color: white;
+    font-size: 19.2px;
+    padding-left: 300px;
 }
 
+/* Segundo texto del header */
+.texto2 {
+    color: white;
+    font-size: 19.2px;
+}
 
+/* Caja derecha del header */
 .caja2 {
-    text-align: right;   /* Alinea los enlaces de navegación a la derecha */
+    float: right;
+    text-align: right;
+    padding-right: 450px;
+    line-height: 25px;
 }
 
+/* Estilo de los links del menú */
 .caja2 a {
-    color: #ccc;            /* Enlaces en color gris claro */
-    text-decoration: none;  /* Quita el subrayado de los links */
-    margin-left: 28px;      /* Separa los enlaces entre sí */
+    color: #ccc;
+    text-decoration: none; /* Quita el subrayado */
+    margin-left: 28px; /* Separa un enlace del otro */
 }
 
 /* --- SECCIÓN PRINCIPAL (Hero / Quiénes Somos) --- */
@@ -60,7 +70,8 @@ body {
 }
 
 .caja3 img {
-    max-width: 100%;    /* Asegura que la imagen no se salga de su contenedor */
+    max-width: 100%;  
+    padding-left: 250px;  /* Asegura que la imagen no se salga de su contenedor */
 }
 
 .caja4 {
@@ -100,7 +111,7 @@ body {
 /* --- SECCIÓN DE TESTIMONIO O PERFIL --- */
 .tabla3 {
     background: #FB3F1D;    /* Fondo naranja llamativo */
-    padding: 60px 20px;
+    padding: 4px 20px;
     text-align: center;     /* Centra todo el contenido */
 }
 
@@ -182,7 +193,7 @@ body {
     color: #666;               /* Gris intermedio para descripción */
     line-height: 1.5;          /* Altura de línea para mejorar legibilidad */
     margin: 0 0 20px;
-    min-height: 350px;         /* Empuja el botón hacia abajo para que todas las tarjetas midan igual */
+    min-height: 35px;         /* Empuja el botón hacia abajo para que todas las tarjetas midan igual */
 }
 
 .btn-project {
