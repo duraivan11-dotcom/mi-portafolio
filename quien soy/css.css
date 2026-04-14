@@ -2,6 +2,7 @@
 * {
     margin: 0;      /* Elimina el margen por defecto del navegador */
     padding: 0;     /* Elimina el relleno por defecto del navegador */
+    box-sizing: border-box;
 }
 
 body {
