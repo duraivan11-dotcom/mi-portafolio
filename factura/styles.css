@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --bg-page: #f0f2f5;
+    --bg-light: #ffffff;
+    --bg-grey: #eaeff2;
+    --bg-dark: #333d47;
+    --text-primary: #000000;
+    --text-secondary: #666666;
+    --text-light: #ffffff;
+    --accent-blue: #d4e4e9;
+    --border-color: #f0f0f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--bg-page);
+    display: flex;
+    justify-content: center;
+    padding: 3rem 1rem;
+}
+
+.invoice-container {
+    width: 850px;
+    background: var(--bg-light);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: 1fr 280px;
+}
+
+/* Header */
+header.left {
+    background: var(--bg-grey);
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+header.right {
+    background: var(--bg-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-light);
+}
+
+header.right h2 {
+    font-size: 2rem;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.logo img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.company-name h1 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+.company-name p {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 4px;
+}
+
+/* Sections */
+.main-left {
+    padding: 3rem;
+    background: var(--bg-light);
+}
+
+.sidebar-right {
+    background: var(--bg-dark);
+    padding: 3rem 2rem;
+    color: var(--text-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+/* Info Grid */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.info-title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.notes p {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+.client-info h3 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.client-info p {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+    text-align: right;
+}
+
+.client-info .info-title {
+    text-align: right;
+}
+
+/* Invoice Details (Dates) */
+.invoice-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.meta-item {
+    margin-bottom: 1.5rem;
+}
+
+.meta-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: #94a3b8;
+    font-weight: 600;
+}
+
+.meta-value {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+/* Table Area */
+.table-container {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 280px;
+}
+
+.table-left {
+    padding: 0 3rem;
+    background: var(--bg-grey);
+}
+
+.table-right {
+    background: var(--bg-dark);
+    padding: 0 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-left table thead {
+    background: var(--bg-grey);
+}
+
+.table-right table thead {
+    background: #414d59;
+}
+
+th {
+    padding: 1rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.table-left th { color: var(--text-primary); }
+.table-right th { color: var(--text-light); }
+
+td {
+    padding: 1.2rem 1rem;
+    font-size: 0.85rem;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.table-right td {
+    color: var(--text-light);
+    border-bottom: 1px solid #414d59;
+}
+
+.col-center { text-align: center; }
+.col-right { text-align: right; }
+
+/* Totals Section */
+.totals-area {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 280px;
+}
+
+.totals-labels {
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.8rem;
+    background: var(--bg-light);
+}
+
+.totals-values {
+    background: var(--bg-dark);
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    color: #94a3b8;
+}
+
+.total-row {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.grand-total-row {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.grand-total-val {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-top: 1px solid #414d59;
+    padding-top: 1rem;
+}
+
+/* Footer Area */
+.footer-area {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 280px;
+}
+
+.footer-left {
+    padding: 3rem;
+}
+
+.footer-right {
+    background: var(--bg-dark);
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.payment-section {
+    margin-top: 2rem;
+}
+
+.radio-group {
+    display: flex;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.radio-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.payment-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.payment-inputs input {
+    background: var(--accent-blue);
+    border: none;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    border-radius: 2px;
+}
+
+.payment-inputs .full {
+    grid-column: span 2;
+}
+
+.signature-line {
+    border-top: 2px solid var(--text-light);
+    margin-top: 2rem;
+    padding-top: 0.5rem;
+    text-align: center;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/* Responsiveness */
+@media (max-width: 850px) {
+    .invoice-container {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    header.right, .sidebar-right, .table-right, .totals-values, .footer-right {
+        padding: 2rem;
+    }
+
+    .table-container, .totals-area, .footer-area {
+        grid-template-columns: 1fr;
+    }
+
+    .totals-labels {
+        align-items: flex-start;
+    }
+
+    .client-info p, .client-info .info-title {
+        text-align: left;
+    }
+
+    .invoice-meta {
+        align-items: flex-start;
+    }
+}
+

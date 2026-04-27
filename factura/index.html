@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura | Soluciones Innovadoras S.A.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="invoice-container">
+        <!-- Encabezado -->
+        <header class="left">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div class="company-name">
+                <h1>Soluciones Innovadoras S.A.</h1>
+                <p>Liderando el futuro digital</p>
+            </div>
+        </header>
+        <header class="right">
+            <h2>FACTURA</h2>
+        </header>
+
+        <!-- Área de Contenido Principal -->
+        <div class="main-left">
+            <div class="info-grid">
+                <div class="notes">
+                    <h2 class="info-title">Notas adicionales</h2>
+                    <p>Gracias por confiar en nuestros servicios. Por favor, realice el pago antes de la fecha de vencimiento para evitar recargos. Si tiene alguna duda sobre esta factura, contáctenos soporte@solucionesinnovadoras.com.</p>
+                </div>
+                <div class="client-info">
+                    <h2 class="info-title">Facturar a:</h2>
+                    <h3>Juan Pérez</h3>
+                    <p>AV. DE LAS AMÉRICAS 456<br>CIUDAD DE MÉXICO<br>MÉXICO</p>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-right">
+            <div class="invoice-meta">
+                <div class="meta-item">
+                    <span class="meta-label">FECHA DE FACTURA</span><br>
+                    <span class="meta-value">27.04.2026</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">FECHA DE VENCIMIENTO</span><br>
+                    <span class="meta-value">27.05.2026</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">FACTURA #</span><br>
+                    <span class="meta-value">MX-74256</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabla Row 1 (Encabezados) -->
+        <div class="table-container">
+            <div class="table-left">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 50px;">#</th>
+                            <th>Descripción del Producto</th>
+                            <th style="width: 100px;" class="col-right">Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Desarrollo Web Frontend</td>
+                            <td class="col-right">$3,050.00</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Diseño de Interfaz (UI/UX)</td>
+                            <td class="col-right">$5,000.00</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Consultoría de Sistemas</td>
+                            <td class="col-right">$7,000.00</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Mantenimiento Mensual</td>
+                            <td class="col-right">$2,000.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-right">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="col-center">Cant.</th>
+                            <th class="col-right">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="col-center">3</td>
+                            <td class="col-right">$9,150.00</td>
+                        </tr>
+                        <tr>
+                            <td class="col-center">1</td>
+                            <td class="col-right">$5,000.00</td>
+                        </tr>
+                        <tr>
+                            <td class="col-center">5</td>
+                            <td class="col-right">$35,000.00</td>
+                        </tr>
+                        <tr>
+                            <td class="col-center">2</td>
+                            <td class="col-right">$4,000.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Área de Totales -->
+        <div class="totals-area">
+            <div class="totals-labels">
+                <div class="total-row">Subtotal</div>
+                <div class="total-row">IVA (16%)</div>
+                <div class="total-row">Envío</div>
+                <div class="total-row">Descuento</div>
+                <div class="grand-total-row">TOTAL</div>
+            </div>
+            <div class="totals-values">
+                <div class="total-row">$53,150.00</div>
+                <div class="total-row">$8,504.00</div>
+                <div class="total-row">$1,200.00</div>
+                <div class="total-row">-$1,500.00</div>
+                <div class="grand-total-val">$61,354.00</div>
+            </div>
+        </div>
+
+        <!-- Área de Pie de Página -->
+        <div class="footer-area">
+            <div class="footer-left">
+                <div class="terms">
+                    <h2 class="info-title">Términos y condiciones</h2>
+                    <p style="font-size: 0.75rem; color: var(--text-secondary);">Esta factura es un documento legal de cobro. Los pagos atrasados están sujetos a un recargo del 5% mensual. El pago debe realizarse mediante los métodos especificados a continuación.</p>
+                </div>
+                <div class="payment-section">
+                    <h2 class="info-title">Método de Pago</h2>
+                    <div class="radio-group">
+                        <div class="radio-item">
+                            <input type="radio" id="cash" name="pay">
+                            <label for="cash">Efectivo/Débito</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="cheque" name="pay">
+                            <label for="cheque">Cheque</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="credit" name="pay" checked>
+                            <label for="credit">Tarjeta de crédito</label>
+                        </div>
+                    </div>
+                    <form class="payment-inputs">
+                        <input type="text" placeholder="Nombre del titular" class="full">
+                        <input type="text" placeholder="# de Tarjeta">
+                        <input type="text" placeholder="Vence (MM/AA)">
+                        <input type="text" placeholder="CVV">
+                    </form>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="signature-line">
+                    Firma Autorizada
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
