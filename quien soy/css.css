@@ -271,7 +271,7 @@ body {
    ESTILOS PARA PANTALLAS MEDIANAS (Tablets - hasta 1400px)
    Objetivo: Ajustar márgenes y preparar la cuadrícula.
    ============================================================ */
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
 
     /* Ajusta el espaciado lateral de la cabecera para que no toque los bordes */
     .caja1 {
