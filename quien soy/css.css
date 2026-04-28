@@ -84,8 +84,8 @@ body {
 
 .caja3 img {
     max-width: 100%;
-    padding-left: 250px;
-    /* Asegura que la imagen no se salga de su contenedor */
+    margin: 0 auto;
+    /* Centra la imagen horizontalmente sin importar la pantalla */
 }
 
 .caja4 {
@@ -268,7 +268,7 @@ body {
 /* --- DISEÑO RESPONSIVO (Media Queries) --- */
 
 /* ============================================================
-   ESTILOS PARA PANTALLAS MEDIANAS (Tablets - hasta 1200px)
+   ESTILOS PARA PANTALLAS MEDIANAS (Tablets - hasta 1400px)
    Objetivo: Ajustar márgenes y preparar la cuadrícula.
    ============================================================ */
 @media (max-width: 1200px) {
@@ -301,34 +301,27 @@ body {
         text-align: center;
     }
 
-    /* SECCIÓN PROYECTOS: Cambia a 2 columnas (50% cada una) */
-    .project-cell {
-        width: 50%;
-        display: inline-block;
-        margin-bottom: 20px;
-        vertical-align: top;
-        /* Alinea las tarjetas por la parte superior */
-    }
-
-    /* Rompe la estructura rígida de tabla para permitir fluidez */
-    .projects-table {
-        display: block;
-        border-spacing: 15px;
-    }
-
-    /* Asegura que las filas internas de la tabla ocupen todo el ancho disponible */
+    /* SECCIÓN PROYECTOS: Cambia a 2 columnas con flexbox */
+    .projects-table,
     .projects-table tbody,
     .projects-table tr {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
         width: 100%;
-        text-align: center;
+        justify-content: center;
+    }
+
+    .project-cell {
+        width: 48%;
+        display: block;
+        margin: 0 1% 20px;
+
     }
 }
 
-/* ============================================================
+/* 
    ESTILOS PARA PANTALLAS PEQUEÑAS (Móviles - hasta 768px)
-   Objetivo: Diseño de una sola columna y fácil de tocar.
-   ============================================================ */
+   Objetivo: Diseño de una sola columna y fácil de tocar. */
 @media (max-width: 768px) {
 
     /* Centra el logo o título principal en móviles */
@@ -426,7 +419,17 @@ body {
         font-size: 1.1rem;
     }
 
-    /* SECCIÓN PROYECTOS EN MÓVIL: Cambia a 1 columna (100% de ancho) */
+    /* SECCIÓN PROYECTOS EN MÓVIL: 1 sola columna */
+    .projects-table,
+    .projects-table tbody,
+    .projects-table tr {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
     .projects-table {
         padding: 0 10px;
     }
@@ -434,7 +437,7 @@ body {
     .project-cell {
         width: 100%;
         display: block;
-        margin-bottom: 25px;
+        margin: 0 0 25px 0;
     }
 
     /* Limita el ancho máximo de las tarjetas para que no se vean gigantes en móviles grandes */
