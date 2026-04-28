@@ -1,14 +1,19 @@
 /* --- RESETEO Y ESTILOS GLOBALES --- */
 * {
-    margin: 0;      /* Elimina el margen por defecto del navegador */
-    padding: 0;     /* Elimina el relleno por defecto del navegador */
+    margin: 0;
+    /* Elimina el margen por defecto del navegador */
+    padding: 0;
+    /* Elimina el relleno por defecto del navegador */
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif; /* Define la fuente principal */
-    background: white;                         /* Fondo de la página blanco */
-    color: #333;                               /* Texto gris oscuro para lectura suave */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Define la fuente principal */
+    background: white;
+    /* Fondo de la página blanco */
+    color: #333;
+    /* Texto gris oscuro para lectura suave */
 }
 
 /* --- ENCABEZADO (Header) --- */
@@ -16,7 +21,8 @@ body {
     background: #3a3a3a;
     width: 100%;
     padding: 16px 32px;
-    overflow: hidden; /* Evita que floats dañen el contenedor */
+    overflow: hidden;
+    /* Evita que floats dañen el contenedor */
 }
 
 /* Caja izquierda del header */
@@ -24,7 +30,7 @@ body {
     float: left;
     text-align: left;
     padding: 0 100px 0 0;
-    
+
 }
 
 /* Primer texto del header */
@@ -45,58 +51,75 @@ body {
     float: right;
     text-align: right;
     padding-right: 450px;
-   
+    line-height: 25px;
 }
 
 /* Estilo de los links del menú */
 .caja2 a {
     color: #ccc;
-    text-decoration: none; /* Quita el subrayado */
-    margin-left: 28px; /* Separa un enlace del otro */
+    text-decoration: none;
+    /* Quita el subrayado */
+    margin-left: 28px;
+    /* Separa un enlace del otro */
 }
 
 /* --- SECCIÓN PRINCIPAL (Hero / Quiénes Somos) --- */
 .tabla2 {
-    padding: 10px 0;    /* Espacio arriba y abajo de la sección */
+    padding: 10px 0;
+    /* Espacio arriba y abajo de la sección */
 }
 
 .tabla2 table {
-    width: 90%;         /* La tabla no ocupa todo el ancho, dejando márgenes laterales */
-    margin: auto;       /* Centra la tabla horizontalmente */
+    width: 90%;
+    /* La tabla no ocupa todo el ancho, dejando márgenes laterales */
+    margin: auto;
+    /* Centra la tabla horizontalmente */
 }
 
 .caja3 {
-    width: 50%;         /* Columna de la izquierda (normalmente para imagen) */
+    width: 50%;
+    /* Columna de la izquierda (normalmente para imagen) */
     text-align: center;
 }
 
 .caja3 img {
-    max-width: 100%;  
-    padding-left: 250px;  /* Asegura que la imagen no se salga de su contenedor */
+    max-width: 100%;
+    padding-left: 250px;
+    /* Asegura que la imagen no se salga de su contenedor */
 }
 
 .caja4 {
-    width: 50%;         /* Columna de la derecha (para texto) */
-    padding-left: 40px; /* Separa el texto de la imagen de la izquierda */
+    width: 50%;
+    /* Columna de la derecha (para texto) */
+    padding-left: 40px;
+    /* Separa el texto de la imagen de la izquierda */
 }
 
 #qs {
-    font-size: 70px;    /* Título gigante */
-    color: #FB3F1D;     /* Color naranja rojizo vibrante */
+    font-size: 70px;
+    /* Título gigante */
+    color: #FB3F1D;
+    /* Color naranja rojizo vibrante */
     margin-bottom: 20px;
 }
 
 .caja4 p {
-    margin-bottom: 30px; /* Separa los párrafos del botón inferior */
+    margin-bottom: 30px;
+    /* Separa los párrafos del botón inferior */
 }
 
 /* --- BOTONES --- */
 .boton1 {
-    background: #FB3F1D;    /* Fondo naranja */
-    color: white;           /* Texto blanco */
-    padding: 14px 30px;     /* Tamaño del botón */
-    border-radius: 5px;     /* Esquinas ligeramente redondeadas */
-    border: 2px solid black;/* Borde negro sólido */
+    background: #FB3F1D;
+    /* Fondo naranja */
+    color: white;
+    /* Texto blanco */
+    padding: 14px 30px;
+    /* Tamaño del botón */
+    border-radius: 5px;
+    /* Esquinas ligeramente redondeadas */
+    border: 2px solid black;
+    /* Borde negro sólido */
 }
 
 .boton2 {
@@ -104,23 +127,29 @@ body {
     color: #e0e0e0;
     border-radius: 5px;
     border: 2px solid black;
-    margin: 20px auto;      /* Centrado con margen arriba/abajo */
+    margin: 20px auto;
+    /* Centrado con margen arriba/abajo */
     padding: 5px;
-    width: 100px;           /* Botón más pequeño y estrecho */
+    width: 100px;
+    /* Botón más pequeño y estrecho */
 }
 
 /* --- SECCIÓN DE TESTIMONIO O PERFIL --- */
 .tabla3 {
-    background: #FB3F1D;    /* Fondo naranja llamativo */
+    background: #FB3F1D;
+    /* Fondo naranja llamativo */
     padding: 4px 20px;
-    text-align: center;     /* Centra todo el contenido */
+    text-align: center;
+    /* Centra todo el contenido */
 }
 
 .caja5 img {
     width: 220px;
     height: 220px;
-    border-radius: 50%;     /* Hace la foto completamente circular */
-    border: 6px solid white;/* Borde grueso blanco alrededor de la foto */
+    border-radius: 50%;
+    /* Hace la foto completamente circular */
+    border: 6px solid white;
+    /* Borde grueso blanco alrededor de la foto */
     margin: auto;
 }
 
@@ -128,13 +157,15 @@ body {
     color: white;
     font-size: 1.4rem;
     padding: 20px 40px;
-    width: 50%;             /* Limita el ancho del texto para que sea legible */
+    width: 50%;
+    /* Limita el ancho del texto para que sea legible */
     margin: auto;
 }
 
 .texto4 {
     color: white;
-    font-style: italic;     /* Texto en cursiva (estilo autor de cita) */
+    font-style: italic;
+    /* Texto en cursiva (estilo autor de cita) */
 }
 
 /* --- SECCIÓN DE PROYECTOS / PORTAFOLIO --- */
@@ -153,28 +184,36 @@ body {
 
 .projects-table {
     width: 100%;
-    border-spacing: 25px 0px; /* Separa las celdas de la tabla (las tarjetas) */
-    table-layout: fixed;       /* Fuerza a que las columnas midan lo mismo */
+    border-spacing: 25px 0px;
+    /* Separa las celdas de la tabla (las tarjetas) */
+    table-layout: fixed;
+    /* Fuerza a que las columnas midan lo mismo */
 }
 
 .project-cell {
-    width: 25%;                /* Diseño de 4 columnas (100 / 4) */
-    vertical-align: top;       /* Alinea las tarjetas al borde superior */
+    width: 25%;
+    /* Diseño de 4 columnas (100 / 4) */
+    vertical-align: top;
+    /* Alinea las tarjetas al borde superior */
     padding: 0;
 }
 
 .project-card {
     background: white;
-    border: 1px solid #e0e0e0; /* Borde gris muy fino */
-    border-radius: 12px;       /* Bordes muy redondeados para estilo moderno */
+    border: 1px solid #e0e0e0;
+    /* Borde gris muy fino */
+    border-radius: 12px;
+    /* Bordes muy redondeados para estilo moderno */
     height: 100%;
-    overflow: hidden;          /* Corta la imagen si sobresale de los bordes redondeados */
+    overflow: hidden;
+    /* Corta la imagen si sobresale de los bordes redondeados */
 }
 
 .project-card img {
     width: 100%;
     height: 200px;
-    object-fit: cover;         /* Ajusta la imagen sin deformarla */
+    object-fit: cover;
+    /* Ajusta la imagen sin deformarla */
     vertical-align: top;
 }
 
@@ -191,10 +230,13 @@ body {
 
 .project-info p {
     font-size: 1rem;
-    color: #666;               /* Gris intermedio para descripción */
-    line-height: 1.5;          /* Altura de línea para mejorar legibilidad */
+    color: #666;
+    /* Gris intermedio para descripción */
+    line-height: 1.5;
+    /* Altura de línea para mejorar legibilidad */
     margin: 0 0 20px;
-    min-height: 35px;         /* Empuja el botón hacia abajo para que todas las tarjetas midan igual */
+    min-height: 35px;
+    /* Empuja el botón hacia abajo para que todas las tarjetas midan igual */
 }
 
 .btn-project {
@@ -208,14 +250,202 @@ body {
 }
 
 .btn-project:hover {
-    background: #d32f0f;      /* El color cambia a un rojo más oscuro al pasar el ratón */
+    background: #d32f0f;
+    /* El color cambia a un rojo más oscuro al pasar el ratón */
 }
 
 /* --- PIE DE PÁGINA (Footer) --- */
 .footer {
-    background: #2f3742;      /* Color azul-grisáceo oscuro */
+    background: #2f3742;
+    /* Color azul-grisáceo oscuro */
     color: white;
     padding: 15px 370px;
-    text-align: right;        /* Alinea el copyright a la derecha */
+    text-align: right;
+    /* Alinea el copyright a la derecha */
     font-size: 14px;
+}
+
+/* --- DISEÑO RESPONSIVO (Media Queries) --- */
+
+/* ============================================================
+   ESTILOS PARA PANTALLAS MEDIANAS (Tablets - hasta 1200px)
+   Objetivo: Ajustar márgenes y preparar la cuadrícula.
+   ============================================================ */
+@media (max-width: 1200px) {
+
+    /* Ajusta el espaciado lateral de la cabecera para que no toque los bordes */
+    .caja1 {
+        padding: 0 20px;
+    }
+
+    /* Reduce la sangría del texto principal para ganar espacio */
+    .texto1 {
+        padding-left: 50px;
+    }
+
+    /* Equilibra el espacio derecho del menú de navegación */
+    .caja2 {
+        padding-right: 50px;
+    }
+
+    /* Optimización de imágenes: evita que se salgan del contenedor y mantiene proporción */
+    .caja3 img {
+        padding-left: 0;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Centra el pie de página y ajusta su tamaño */
+    .footer {
+        padding: 15px 50px;
+        text-align: center;
+    }
+
+    /* SECCIÓN PROYECTOS: Cambia a 2 columnas (50% cada una) */
+    .project-cell {
+        width: 50%;
+        display: inline-block;
+        margin-bottom: 20px;
+        vertical-align: top;
+        /* Alinea las tarjetas por la parte superior */
+    }
+
+    /* Rompe la estructura rígida de tabla para permitir fluidez */
+    .projects-table {
+        display: block;
+        border-spacing: 15px;
+    }
+
+    /* Asegura que las filas internas de la tabla ocupen todo el ancho disponible */
+    .projects-table tbody,
+    .projects-table tr {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* ============================================================
+   ESTILOS PARA PANTALLAS PEQUEÑAS (Móviles - hasta 768px)
+   Objetivo: Diseño de una sola columna y fácil de tocar.
+   ============================================================ */
+@media (max-width: 768px) {
+
+    /* Centra el logo o título principal en móviles */
+    .encabezado {
+        padding: 15px;
+        text-align: center;
+    }
+
+    /* Elimina alineaciones laterales (floats) para apilar los elementos verticalmente */
+    .caja1,
+    .caja2 {
+        float: none;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Quita sangrías y hace que el texto ocupe su propio bloque */
+    .texto1 {
+        padding-left: 0;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    /* Elimina rellenos innecesarios en el contenedor de enlaces */
+    .caja2 {
+        padding-right: 0;
+    }
+
+    /* Ajusta los botones/links del menú para que sean fáciles de pulsar con el dedo */
+    .caja2 a {
+        margin: 5px 10px;
+        display: inline-block;
+    }
+
+    /* TRANSFORMAR TABLAS: Convierte celdas (td) y filas (tr) en bloques independientes 
+       Esto evita que el usuario tenga que hacer scroll horizontal */
+    .tabla2 table,
+    .tabla2 tbody,
+    .tabla2 tr,
+    .tabla2 td,
+    .tabla3 table,
+    .tabla3 tbody,
+    .tabla3 tr,
+    .tabla3 td,
+    .tabla4 table,
+    .tabla4 tbody,
+    .tabla4 tr,
+    .tabla4 td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        /* Incluye el padding en el ancho total para evitar desbordes */
+    }
+
+    /* Contenedores de secciones: se expanden al 100% del ancho móvil */
+    .caja3,
+    .caja4 {
+        width: 100%;
+        padding: 0 15px;
+        text-align: center;
+    }
+
+    /* Centra las imágenes de las secciones y ajusta su tamaño al 80% de la pantalla */
+    .caja3 img {
+        padding-left: 0;
+        margin: 0 auto 20px auto;
+        display: block;
+        width: 80%;
+    }
+
+    /* Ajustes tipográficos para títulos y párrafos */
+    #qs {
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+
+    /* Título "Quiénes Somos" */
+    .caja4 p {
+        margin-bottom: 15px;
+    }
+
+    /* Reduce espacio entre texto y botón */
+
+    /* Estiliza el botón principal para que no quede pegado al fondo */
+    .boton1 {
+        display: inline-block;
+        margin-bottom: 25px;
+    }
+
+    /* Mejora la lectura de los párrafos largos en pantallas pequeñas */
+    .texto3 {
+        width: 100%;
+        padding: 20px 15px;
+        font-size: 1.1rem;
+    }
+
+    /* SECCIÓN PROYECTOS EN MÓVIL: Cambia a 1 columna (100% de ancho) */
+    .projects-table {
+        padding: 0 10px;
+    }
+
+    .project-cell {
+        width: 100%;
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    /* Limita el ancho máximo de las tarjetas para que no se vean gigantes en móviles grandes */
+    .project-card {
+        margin: 0 auto;
+        max-width: 400px;
+    }
+
+    /* Pie de página simple y centrado */
+    .footer {
+        padding: 20px;
+        text-align: center;
+    }
 }
