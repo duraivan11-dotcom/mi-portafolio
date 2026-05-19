@@ -28,8 +28,9 @@ body {
 
 .invoice-container {
     width: 850px;
+    max-width: 100%;
     background: var(--bg-light);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
     display: grid;
     grid-template-columns: 1fr 280px;
 }
@@ -44,7 +45,7 @@ header.left {
 }
 
 header.right {
-    background: var(--bg-dark);
+    background: #263545;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,6 +63,8 @@ header.right h2 {
     width: 65px;
     height: 65px;
     object-fit: contain;
+    mix-blend-mode: multiply;
+    /* Removed white background */
 }
 
 .company-name h1 {
@@ -119,8 +122,8 @@ header.right h2 {
 .client-info h3 {
     font-size: 0.9rem;
     font-weight: 700;
-    text-transform: uppercase;
     margin-bottom: 0.5rem;
+    text-align: right;
 }
 
 .client-info p {
@@ -172,7 +175,7 @@ header.right h2 {
 }
 
 .table-right {
-    background: var(--bg-dark);
+    background: #263545;
     padding: 0 2rem;
 }
 
@@ -196,13 +199,18 @@ th {
     text-align: left;
 }
 
-.table-left th { color: var(--text-primary); }
-.table-right th { color: var(--text-light); }
+.table-left th {
+    color: var(--text-primary);
+}
+
+.table-right th {
+    color: var(--text-light);
+}
 
 td {
     padding: 1.2rem 1rem;
     font-size: 0.85rem;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .table-right td {
@@ -210,8 +218,15 @@ td {
     border-bottom: 1px solid #414d59;
 }
 
-.col-center { text-align: center; }
-.col-right { text-align: right; }
+.col-center {
+    text-align: center;
+    background-color: #263545;
+}
+
+.col-right {
+    text-align: right;
+    background-color: #263545;
+}
 
 /* Totals Section */
 .totals-area {
@@ -277,6 +292,7 @@ td {
     justify-content: flex-end;
 }
 
+/* Payment Section - Matching Image */
 .payment-section {
     margin-top: 2rem;
 }
@@ -296,22 +312,44 @@ td {
 }
 
 .payment-inputs {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 0.5rem;
     margin-top: 1rem;
 }
 
-.payment-inputs input {
-    background: var(--accent-blue);
-    border: none;
-    padding: 0.5rem;
-    font-size: 0.75rem;
-    border-radius: 2px;
+.payment-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.payment-inputs .full {
-    grid-column: span 2;
+.payment-label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    white-space: nowrap;
+}
+
+.payment-input-box {
+    background: #cedce0;
+    height: 12px;
+    border-radius: 1px;
+}
+
+.full-box {
+    flex-grow: 1;
+}
+
+.card-box {
+    flex-grow: 1;
+}
+
+.exp-box {
+    width: 60px;
+}
+
+.cv-box {
+    width: 40px;
 }
 
 .signature-line {
@@ -324,31 +362,159 @@ td {
     font-weight: 700;
 }
 
-/* Responsiveness */
+/* ================================================
+   RESPONSIVE — Tablet (max-width: 850px)
+   ================================================ */
 @media (max-width: 850px) {
+    body {
+        padding: 1.5rem 0.5rem;
+    }
+
     .invoice-container {
         width: 100%;
         grid-template-columns: 1fr;
     }
 
-    header.right, .sidebar-right, .table-right, .totals-values, .footer-right {
-        padding: 2rem;
+    header.left {
+        padding: 2rem 1.5rem;
+        justify-content: center;
     }
 
-    .table-container, .totals-area, .footer-area {
-        grid-template-columns: 1fr;
+    header.right {
+        padding: 1.5rem;
     }
 
-    .totals-labels {
+    header.right h2 {
+        font-size: 1.6rem;
+        letter-spacing: 8px;
+    }
+
+    .main-left {
+        padding: 2rem 1.5rem;
+    }
+
+    .sidebar-right {
+        padding: 1.5rem 2rem;
+        flex-direction: row;
+        justify-content: space-around;
         align-items: flex-start;
-    }
-
-    .client-info p, .client-info .info-title {
-        text-align: left;
     }
 
     .invoice-meta {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .meta-item {
+        margin-bottom: 0;
+    }
+
+    .table-container,
+    .totals-area,
+    .footer-area {
+        grid-template-columns: 1fr;
+    }
+
+    .table-left,
+    .table-right {
+        padding: 0 1.5rem;
+    }
+
+    .totals-labels {
+        padding: 1.5rem;
         align-items: flex-start;
+    }
+
+    .totals-values {
+        padding: 1.5rem;
+    }
+
+    .footer-left,
+    .footer-right {
+        padding: 2rem 1.5rem;
     }
 }
 
+/* ================================================
+   RESPONSIVE — Mobile (max-width: 600px)
+   ================================================ */
+@media (max-width: 600px) {
+    .payment-row {
+        flex-wrap: wrap;
+    }
+
+    .payment-label {
+        width: 100%;
+    }
+
+    .payment-input-box {
+        flex-grow: 1;
+        width: 100%;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .client-info h3,
+    .client-info p,
+    .client-info .info-title {
+        text-align: left;
+    }
+
+    .table-left,
+    .table-right {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    table {
+        min-width: 450px;
+    }
+
+    .sidebar-right {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .invoice-meta {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 400px) {
+    header.left {
+        padding: 1.5rem 1rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header.right h2 {
+        font-size: 1.2rem;
+        letter-spacing: 5px;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .company-name h1 {
+        font-size: 1.1rem;
+    }
+
+    .main-left,
+    .footer-left,
+    .footer-right {
+        padding: 1rem;
+    }
+
+    .radio-group {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
