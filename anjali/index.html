@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anjali Estudio de Yoga</title>
+    <!-- Vinculación del archivo de estilos externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO (Layout: FLEXBOX) -->
+    <header class="encabezado-principal">
+        <div class="contenedor-logo">
+            <img src="./images/IMG_0288.PNG" alt="Logo-anjali">
+        </div>
+        <nav class="menu-navegacion">
+            <ul>
+                <li><a href="#clases">Clases</a></li>
+                <li><a href="#horarios">Horarios</a></li>
+                <li><a href="#membresias">Membresías</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION (Layout: FLEXBOX) -->
+    <section class="seccion-hero">
+        <h1 class="titulo-hero">Respira el presente, habita tu calma</h1>
+        <a href="#reserva" class="boton-accion">Reserva tu clase gratis</a>
+    </section>
+
+    <!-- SECCIÓN VIDEOS (Layout: CSS GRID) -->
+    <section class="contenedor-seccion">
+        <h2 class="titulo-seccion">Nuestro Espacio en Videos</h2>
+        <div class="rejilla-videos">
+            <!-- Videos mudos automáticos en bucle -->
+            <div class="bloque-video">
+                <video muted loop autoplay playsinline>
+                    <source src="./video/iluminati.mp4" type="video/mp4">
+                </video>
+                <div class="descripcion-video">Instalaciones iluminadas</div>
+            </div>
+            <div class="bloque-video">
+                <video muted loop autoplay playsinline>
+                    <source src="./video/meditacion.mp4" type="video/mp4">
+                </video>
+                <div class="descripcion-video">Sesión de meditación</div>
+            </div>
+            <div class="bloque-video">
+                <video muted loop autoplay playsinline>
+                    <source src="./video/estiramineto.mp4" type="video/mp4">
+                </video>
+                <div class="descripcion-video">Control y posturas</div>
+            </div>
+            <!-- Video con Audio principal -->
+            <div class="bloque-video video-principal">
+                <video controls
+                    poster="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1200&q=80">
+                    <source src="./video/lugar.mp4" type="video/mp4">
+                </video>
+                <div class="descripcion-video">Video Central: Filosofía de vida y experiencia Anjali (Con Audio)</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CLASES / CARDS (Layout: CSS GRID) -->
+    <section id="clases" class="contenedor-seccion">
+        <h2 class="titulo-seccion">Clases que Ofrecemos</h2>
+        <div class="rejilla-clases">
+            <!-- Card 1 -->
+            <div class="tarjeta-clase">
+                <img src="./images/Hatha_Yoga.jpeg" alt="Clase de Hatha Yoga" class="imagen-clase">
+                <h3>Hatha Yoga</h3>
+                <p>Posturas clásicas y estáticas con control preciso de la respiración profunda.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="tarjeta-clase">
+                <img src="./images/Vinyasa_Flow.jpeg" alt="Clase de Vinyasa Flow" class="imagen-clase">
+                <h3>Vinyasa Flow</h3>
+                <p>Práctica fluida y dinámica donde los movimientos siguen el ritmo de tu inhalación.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="tarjeta-clase">
+                <img src="./images/Yin_Yoga.jpeg" alt="Clase de Yin Yoga" class="imagen-clase">
+                <h3>Yin Yoga</h3>
+                <p>Posturas pasivas profundas enfocadas en la flexibilidad de articulaciones.</p>
+            </div>
+            <!-- Card 4 -->
+            <div class="tarjeta-clase">
+                <img src="./images/Yoga_Prenatal.jpeg" alt="Clase de Yoga Prenatal" class="imagen-clase">
+                <h3>Yoga Prenatal</h3>
+                <p>Acondicionamiento físico seguro y técnicas de relajación para gestantes.</p>
+            </div>
+            <!-- Card 5 -->
+            <div class="tarjeta-clase">
+                <img src="./images/Meditación.jpeg" alt="Clase de Meditación" class="imagen-clase">
+                <h3>Meditación</h3>
+                <p>Sesiones guiadas para silenciar los pensamientos y reducir los niveles de estrés.</p>
+            </div>
+            <!-- Card 6 -->
+            <div class="tarjeta-clase">
+                <img src="./images/Ashtanga.jpeg" alt="Clase de Ashtanga Yoga" class="imagen-clase">
+                <h3>Ashtanga</h3>
+                <p>Estilo riguroso y dinámico que sigue secuencias fijas tradicionales.</p>
+            </div>
+            <!-- Card 7 -->
+            <div class="tarjeta-clase">
+                <img src="./images/Restaurativo.jpeg" alt="Clase de Yoga Restaurativo" class="imagen-clase">
+                <h3>Restaurativo</h3>
+                <p>Uso de soportes anatómicos para causar un descanso físico profundo.</p>
+            </div>
+            <!-- Card 8 -->
+            <div class="tarjeta-clase">
+                <img src="./images/Yoga_Nidra.jpeg" alt="Clase de Yoga Nidra" class="imagen-clase">
+                <h3>Yoga Nidra</h3>
+                <p>Estado de meditación consciente equivalente al sueño reparador profundo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CRONOGRAMA SEMANAL (Datos Tabulares Reales) -->
+    <section id="horarios" class="contenedor-seccion">
+        <h2 class="titulo-seccion">Cronograma Semanal</h2>
+        <div class="contenedor-tabla">
+            <table class="tabla-horarios">
+                <thead>
+                    <tr>
+                        <th>Horario</th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                        <th>Sábado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>06:00 AM - 07:15 AM</td>
+                        <td>Hatha Yoga</td>
+                        <td>Vinyasa Flow</td>
+                        <td>Hatha Yoga</td>
+
+
+                        <td>Vinyasa Flow</td>
+                        <td>Ashtanga</td>
+                        <td>Meditación</td>
+                    </tr>
+                    <tr>
+                        <td>09:00 AM - 10:15 AM</td>
+                        <td>Yoga Prenatal</td>
+                        <td>Yin Yoga</td>
+                        <td>Yoga Prenatal</td>
+                        <td>Yin Yoga</td>
+                        <td>Restaurativo</td>
+                        <td>Hatha Flow</td>
+                    </tr>
+                    <tr>
+                        <td>06:30 PM - 07:45 PM</td>
+                        <td>Vinyasa Flow</td>
+                        <td>Hatha Yoga</td>
+                        <td>Vinyasa Flow</td>
+                        <td>Ashtanga</td>
+                        <td>Yoga Nidra</td>
+                        <td>Cerrado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- PLANES DE MEMBRESÍA (Layout: FLEXBOX) -->
+    <section id="membresias" class="contenedor-seccion">
+        <h2 class="titulo-seccion">Planes de Membresía</h2>
+        <div class="bloques-membresias">
+            <div class="tarjeta-precio">
+                <h3>Clase Suelta</h3>
+                <div class="monto-precio">$30.000</div>
+                <p>Ideal para una práctica ocasional o de prueba en nuestro espacio.</p>
+            </div>
+            <div class="tarjeta-precio destacado">
+                <div class="etiqueta-destacado">Popular</div>
+                <h3>Mensual Ilimitado</h3>
+                <div class="monto-precio">$180.000</div>
+                <p>Acceso libre a todas las modalidades de clases de lunes a sábado.</p>
+            </div>
+            <div class="tarjeta-precio">
+                <h3>Paquete 10 Clases</h3>
+                <div class="monto-precio">$250.000</div>
+                <p>Válido por dos meses. Practica a tu propio ritmo con total libertad.</p>
+            </div>
+            <div class="tarjeta-precio">
+                <h3>Trimestre</h3>
+                <div class="monto-precio">$500.000</div>
+                <p>Plan integral enfocado en consolidar tu hábito de bienestar y balance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE VALENTINA Y GALERÍA (Layout: FLEXBOX MIXTO) -->
+    <section class="contenedor-seccion">
+        <div class="bloque-biografia-galeria">
+            <div class="perfil-valentina">
+                <h2 class="subtitulo-biografia">Sobre Valentina</h2>
+                <img src="https://c.superprof.com/i/a/16514385/8383131/600/20220703231209/instructora-yoga-certificada-con-experiencia-vinyasa-todas-las-edades-enseno-las-tecnicas-meditacion-movimiento.jpg"
+                    alt="Valentina Restrepo Instructora" class="foto-perfil">
+                <p>Instructora certificada en Rishikesh, India. Su enfoque une la rigurosidad de la alineación física
+                    con la suavidad mental del mindfulness, creando espacios seguros para ejecutivos y profesionales de
+                    la ciudad.</p>
+            </div>
+            <div class="mosaico-estudio">
+                <img src="https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&w=400&h=300&q=80"
+                    alt="Salón Principal iluminado" class="foto-estudio">
+                <img src="https://images.unsplash.com/photo-1591228127791-8e2eaef098d3?auto=format&fit=crop&w=400&h=300&q=80"
+                    alt="Detalle de cuencos y meditación" class="foto-estudio">
+                <img src="https://images.unsplash.com/photo-1512438248247-f0f2a5a8b7f0?auto=format&fit=crop&w=400&h=300&q=80"
+                    alt="Bloques y accesorios de madera" class="foto-estudio">
+                <img src="https://impulsapopular.com/wp-content/uploads/2019/03/4408-Creando-un-%C3%A1rea-de-descanso-en-tu-empresa.jpg"
+                    alt="Zona de té y descanso pasivo" class="foto-estudio">
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARIO DE RESERVA (Layout: FLEXBOX COLUMN) -->
+    <section id="reserva" class="contenedor-seccion">
+        <h2 class="titulo-seccion">Tu Primera Clase Gratis</h2>
+        <div class="contenedor-formulario">
+            <form action="#" method="POST" class="formulario-reserva">
+                <div class="grupo-campo">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ej. Carlos Mendoza">
+                </div>
+                <div class="grupo-campo">
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com">
+                </div>
+                <div class="grupo-campo">
+                    <label for="telefono">Teléfono de Contacto</label>
+                    <input type="tel" id="telefono" name="telefono" required placeholder="315 123 4567">
+                </div>
+                <div class="grupo-campo">
+                    <label for="clase">Clase de Interés</label>
+                    <select id="clase" name="clase" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="hatha">Hatha Yoga</option>
+                        <option value="vinyasa">Vinyasa Flow</option>
+                        <option value="yin">Yin Yoga</option>
+                        <option value="meditacion">Meditación Guiada</option>
+                    </select>
+                </div>
+                <button type="submit" class="boton-accion-formulario">Enviar Solicitud</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- BLOG PREVIEWS (Layout: FLEXBOX) -->
+    <section class="contenedor-seccion">
+        <h2 class="titulo-seccion">Bienestar en Papel</h2>
+        <div class="bloques-blog">
+            <div class="tarjeta-articulo">
+                <div class="meta-fecha">Mayo 12, 2026</div>
+                <h3>Técnicas de Pranayama para el estrés de la oficina</h3>
+                <p>Tres ejercicios de respiración consciente que puedes realizar desde tu escritorio en menos de cinco
+                    minutos.</p>
+                <a href="#" class="enlace-leer">Leer artículo →</a>
+            </div>
+            <div class="tarjeta-articulo">
+                <div class="meta-fecha">Mayo 05, 2026</div>
+                <h3>El valor del espacio en blanco en tu día</h3>
+                <p>Cómo el exceso de compromisos bloquea la mente y por qué el descanso pasivo mejora tu productividad
+                    diaria.</p>
+                <a href="#" class="enlace-leer">Leer artículo →</a>
+            </div>
+            <div class="tarjeta-articulo">
+                <div class="meta-fecha">Abril 28, 2026</div>
+                <h3>Guía de meditación para principiantes</h3>
+                <p>Pequeños pasos prácticos para iniciar el hábito de calmar la mente sin frustrarte en los primeros
+                    intentos.</p>
+                <a href="#" class="enlace-leer">Leer artículo →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA (Layout: FLEXBOX MÚLTIPLE) -->
+    <footer id="contacto" class="pie-pagina">
+        <div class="contenido-pie">
+            <div class="columna-pie">
+                <h4>Estudio Anjali</h4>
+                <p>Un espacio de calma diseñado para profesionales urbanos en busca de balance integral.</p>
+                <p class="eslogan-pie">"Respira el presente, habita tu calma."</p>
+            </div>
+            <div class="columna-pie">
+                <h4>Ubicación</h4>
+                <p>Calle 48 #28-15</p>
+                <p>Barrio Cabecera, Bucaramanga</p>
+                <!-- Imagen real que simula un mapa estético integrado -->
+                <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=400&h=180&q=60"
+                    alt="Mapa de ubicación en Bucaramanga" class="mapa-estudio">
+            </div>
+            <div class="columna-pie">
+                <h4>Atención y Redes</h4>
+                <p>Lunes a Viernes: 6:00 AM - 8:30 PM</p>
+                <p>Sábados: 8:00 AM - 12:00 PM</p>
+                <ul class="redes-sociales">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">TikTok</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="derechos-autor">
+            <p>&copy; 2026 Anjali Estudio de Yoga. Todos los derechos reservados. Diseñado bajo lineamientos
+                minimalistas.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
