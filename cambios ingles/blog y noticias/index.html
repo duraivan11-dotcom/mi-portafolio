@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog y Noticias - Mogotes</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    /* Estilos adicionales para asegurar que los anclajes funcionen */
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-logo">Mogotes</div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="../index.html#sitios" class="active">Sitios</a></li>
+      <li><a href="../index.html#galeria">Galería</a></li>
+      <li><a href="../index.html#blog">Blog</a></li>
+      <li><a href="../index.html#contacto">Contacto</a></li>
+    </ul>
+    <div class="nav-lang">ES / EN</div>
+    <button class="nav-menu-btn" aria-label="Menú">&#9776;</button>
+  </nav>
+
+  <!-- HERO noticias -->
+  <section class="hero-destinos">
+    <div class="hero-destinos-content">
+      <h1 class="hero-destinos-title">Blog y Noticias</h1>
+      <p class="hero-destinos-desc">Mantente al día con los eventos y maravillas de Mogotes</p>
+    </div>
+  </section>
+
+  <!-- FESTIVAL DEL BOCADILLO -->
+  <section id="cueva-rica" class="destino-section">
+    <div class="container">
+      <div class="destino-grid">
+        <div class="destino-image">
+          <div style="background-color: #2d5a1b; width: 100%; height: 400px; display: flex; align-items: center; justify-content: center; border-radius: 28px; color: white; font-size: 24px;">
+             <img src="../Imagenes/bocadi.jpg" alt="" srcset="">
+          </div>
+          <span class="destino-badge">Eventos <br> 15 ABR 2026
+          </span>
+        </div>
+        <div class="destino-info">
+          <h2 class="destino-title">Festival del Bocadillo en Mogotes</h2>
+          <p class="destino-description">
+            Disfruta de tres días de tradición y cultura.
+            En este festival exaltamos la gastronomía santandereana rindiendo homenaje al cultivo de guayaba y 
+            caña de azúcar, con degustaciones de nuestro tradicional bocadillo, muestras agrícolas,
+             música en vivo y la inigualable hospitalidad de nuestra gente.
+          </p>
+          <div class="destino-actividades">
+            <h3>Actividades destacadas</h3>
+            <ul>
+              <li>Degustación de dulces </li>
+              <li>Presentaciones de música </li>
+              <li>Muestras agrícolas locales</li>
+              <li>Concursos de danzas </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ECOTURISMO-->
+  <section id="rio-mogotico" class="destino-section section-alt">
+    <div class="container">
+      <div class="destino-grid reverse">
+        <div class="destino-image">
+          <div style="background-color: #185fa5; width: 100%; height: 400px; display: flex; align-items: center; justify-content: center; border-radius: 28px; color: white; font-size: 24px;">
+             <img src="../Imagenes/senderos.jpg" alt="" srcset="">
+          </div>
+          <span class="destino-badge">Ecoturismo <br> 2026 02 MAR 
+        </span>
+        </div>
+        <div class="destino-info">
+          <h2 class="destino-title">Nuevas rutas de Senderismo</h2>
+          <p class="destino-description">
+            Aventúrate por nuestros caminos ancestrales.
+            Las nuevas rutas ecoturísticas conectan el imponente cañón del río Mogoticos con Cueva Rica,
+            un tesoro arqueológico donde podrás admirar auténticas pictografías de la cultura Guane mientras 
+            disfrutas de la majestuosa naturaleza.
+          </p>
+          <div class="destino-actividades">
+            <h3>Actividades destacadas</h3>
+            <ul>
+              <li>Observación de aves endémicas</li>
+              <li>Visita a Cueva Rica y pictogramas</li>
+              <li>Pozos naturales del Río Mogotico</li>
+              <li>Senderismo con guías locales</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FERIA -->
+  <section id="parque-central" class="destino-section">
+    <div class="container">
+      <div class="destino-grid">
+        <div class="destino-image">
+          <div style="background-color: #BA7517; width: 100%; height: 400px; display: flex; align-items: center; justify-content: center; border-radius: 28px; color: white; font-size: 24px;">
+             <img src="../Imagenes/FERIA_12052021.jpg" alt="" srcset="">
+          </div>
+          <span class="destino-badge">Cultura <br> 20 ENE 2026
+          </span>
+        </div>
+        <div class="destino-info">
+          <h2 class="destino-title">Artesanos de Mogotes en feria nacional</h2>
+          <p class="destino-description">
+            El talento de nuestros maestros tejedores brilló en Bogotá.
+            Conoce cómo la transformación de la fibra del fique en hermosas alpargatas y canastos no solo 
+            preserva nuestra identidad, sino que impulsa la economía sostenible y el trabajo de las familias campesinas.
+          </p>
+          <div class="destino-actividades">
+            <h3>Actividades destacadas</h3>
+            <ul>
+              <li>Alpargatas tradicionales de fique</li>
+              <li>Canastos y cestería utilitaria</li>
+              <li>Sombreros tejidos a mano</li>
+              <li>Tapices decorativos y alfombras</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">Mogotes Turismo</span>
+        <p class="footer-tagline">Pueblo Patrimonio de Colombia</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="../index.html">Inicio</a>
+        <a href="../index.html#sitios">Sitios turísticos</a>
+        <a href="../index.html#galeria">Galería</a>
+        <a href="../index.html#blog">Blog</a>
+        <a href="../index.html#contacto">Contacto</a>
+      </nav>
+      <div class="footer-social">
+        <a href="#" class="social-icon" aria-label="Facebook">f</a>
+        <a href="#" class="social-icon" aria-label="Instagram">in</a>
+        <a href="#" class="social-icon" aria-label="YouTube">▶</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Mogotes Turismo · Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/573157802338" class="whatsapp-fab" target="_blank" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="30" height="30">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+</body>
+</html>
