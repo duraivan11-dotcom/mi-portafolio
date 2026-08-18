@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Usuarios </title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Usuarios</h1>
+        <nav>
+            <a href="index.html">Inicio (100)</a>
+            <a href="favoritos.html">Favoritos ✪</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="title-section">
+            <h2>Lista de 100 Usuarios</h2>
+            <p id="contador-favoritos">Favoritos guardados: 0</p>
+        </div>
+
+        <div id="cargando" class="cargando">Cargando 100 usuarios desde Random User API...</div>
+
+        <div id="contenedor-tarjetas" class="grid-tarjetas"></div>
+    </main>
+
+    <script src="js/usuarios.js"></script>
+</body>
+</html>
